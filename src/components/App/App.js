@@ -12,8 +12,10 @@ function App() {
   return (
     <>
       <CountriesState>
-        {/*<Header/>*/}
+        <div style={{position: 'relative'}}>
+        <Header/>
         <MyMap/>;
+        </div>
       </CountriesState>
     </>
   );

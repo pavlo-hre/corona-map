@@ -17,18 +17,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/getCountry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/actionTypes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/countries/context.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/countries/reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/countries/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/map.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +99,7 @@
       <workItem from="1589042751394" duration="8354000" />
       <workItem from="1589093620089" duration="1758000" />
       <workItem from="1589096213677" duration="809000" />
-      <workItem from="1589097043552" duration="28103000" />
+      <workItem from="1589097043552" duration="33440000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1589044246411</created>
@@ -128,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589050953550</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="connect Context">
+      <created>1589134021701</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589134021701</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,17 +163,18 @@
     <MESSAGE value="init project" />
     <MESSAGE value="connect mapbox" />
     <MESSAGE value="add react-select" />
-    <option name="LAST_COMMIT_MESSAGE" value="add react-select" />
+    <MESSAGE value="connect Context" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect Context" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589043827248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589043827248" />
-    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589050952766">
+    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589134020748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589050952766" />
+    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589134020748" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589129319820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

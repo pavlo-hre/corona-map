@@ -1,4 +1,21 @@
-.container {
-  width: 90%;
-  margin: 0 auto;
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba(203, 202, 202, 0.3);
+
+  .select {
+    flex-grow: 1;
+    max-width: 220px;
+  }
+
+  .header-title {
+    margin: 0;
+    color: #c1c1c1;
+  }
 }
