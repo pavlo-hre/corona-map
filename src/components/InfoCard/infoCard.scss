@@ -3,6 +3,7 @@
   padding-right: 20px;
   margin-right: 10px;
   color: #ffffff;
+  text-align: center;
 
   .info-total {
     padding: 10px;
@@ -17,9 +18,8 @@
     border-radius: 10px;
     font-size: 14px;
     position: absolute;
-    top: -11px;
+    top: -12px;
     right: 0;
-    font-weight: bold;
   }
 
   @media (max-width: 767px) {

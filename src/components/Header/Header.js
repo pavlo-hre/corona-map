@@ -1,16 +1,11 @@
 import React, {useContext} from 'react';
 import './header.scss';
 import HeaderSelect from '../Select/Select';
-import InfoCard from '../InfoCard/InfoCard';
 import {CountriesContext} from '../../context/countries/context';
+import InfoBlock from '../InfoBlock/InfoBlock';
 
 const Header = () => {
-  const {
-    total: {
-      NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed,
-      TotalDeaths, TotalRecovered
-    }
-  } = useContext(CountriesContext);
+  const {total, total: {TotalConfirmed}} = useContext(CountriesContext);
 
   return (
     <header>
@@ -20,23 +15,7 @@ const Header = () => {
       {
         TotalConfirmed
         &&
-        <div className='header-info'>
-          <InfoCard
-            totalCount={TotalConfirmed}
-            newCount={NewConfirmed}
-            type='Всего'
-          />
-          <InfoCard
-            totalCount={TotalDeaths}
-            newCount={NewDeaths}
-            type='Умерло'
-          />
-          <InfoCard
-            totalCount={TotalRecovered}
-            newCount={NewRecovered}
-            type='Выздоровело'
-          />
-        </div>
+        <InfoBlock {...total}/>
       }
       <div className='header-select'>
         <HeaderSelect/>

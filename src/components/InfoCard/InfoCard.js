@@ -25,7 +25,7 @@ const InfoCard = props => {
         className='info-new'
         style={bgStyles}
       >
-       + {newCount}
+        {newCount ? `+ ${newCount}` : 0}
       </span>
       <div className='info-title'>
         {type}

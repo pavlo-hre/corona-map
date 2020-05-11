@@ -5,6 +5,8 @@ import ReactMapboxGl, {
 } from 'react-mapbox-gl';
 import './map.scss';
 import {CountriesContext} from '../../context/countries/context';
+import InfoCard from '../InfoCard/InfoCard';
+import InfoBlock from '../InfoBlock/InfoBlock';
 
 
 const Map = ReactMapboxGl({
@@ -52,14 +54,14 @@ const MyMap = () => {
         location &&
         <Popup
           coordinates={location.latlng}
-          anchor='bottom'
-          onClick={()=>setLocation(null)}
+          anchor='top'
+          onClick={() => setLocation(null)}
         >
-          <img src={location.flag} alt=""/>
-          <h3 className='title'>{location.nameRus}</h3>
-          <div>Всего{location.TotalConfirmed}</div>
-          <div>Выздоровело{location.TotalRecovered}</div>
-          <div>Умерли{location.TotalDeaths}</div>
+          <div className='popup-header'>
+            <img src={location.flag} alt={location.name}/>
+            <h3>{location.nameRus}</h3>
+          </div>
+          <InfoBlock {...location}/>
         </Popup>
       }
     </Map>
