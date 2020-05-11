@@ -10,17 +10,25 @@ header {
   left: 0;
   z-index: 999;
   background-color: rgba(42, 42, 42, 0.6);
+  color: #ffffff;
 
   .header-select {
     flex-grow: 1;
     max-width: 220px;
   }
 
-  .header-title {
-    margin: 0;
-    color: #ffffff;
+  .title-wrap {
     margin-right: 10px;
+
+    .header-title {
+      margin: 0;
+    }
+
+    .update-time {
+      font-size: 11px;
+    }
   }
+
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -30,10 +38,16 @@ header {
       width: 100%;
       max-width: 400px;
     }
-
-    .header-title {
+    .title-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 0;
       margin-bottom: 10px;
-      font-size: 20px;
+      width: 100%;
+
+      .header-title {
+        font-size: 20px;
+      }
     }
   }
 

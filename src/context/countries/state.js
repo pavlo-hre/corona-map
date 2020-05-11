@@ -15,7 +15,8 @@ export const CountriesState = ({children}) => {
     total: {},
     location: null,
     loading: false,
-    error: false
+    error: false,
+    updateTime: null
   };
 
   const [state, dispatch] = useReducer(CountriesReducer, initialState);

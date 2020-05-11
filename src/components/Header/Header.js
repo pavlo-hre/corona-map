@@ -5,12 +5,19 @@ import {CountriesContext} from '../../context/countries/context';
 import InfoBlock from '../InfoBlock/InfoBlock';
 
 const Header = () => {
-  const {total, total: {TotalConfirmed}} = useContext(CountriesContext);
+  const {total, updateTime, total: {TotalConfirmed}} = useContext(CountriesContext);
+  const date = new Date(updateTime)
+    .toLocaleString('en-GB',
+      {
+        day: 'numeric', month: 'long', hour: '2-digit',
+        minute: '2-digit', second: '2-digit'
+      });
 
   return (
     <header>
-      <div>
+      <div className='title-wrap'>
         <h1 className='header-title'>Covid-19 Map </h1>
+        <div className='update-time'>Обновлено: {date}</div>
       </div>
       {
         TotalConfirmed

@@ -5,7 +5,6 @@ import ReactMapboxGl, {
 } from 'react-mapbox-gl';
 import './map.scss';
 import {CountriesContext} from '../../context/countries/context';
-import InfoCard from '../InfoCard/InfoCard';
 import InfoBlock from '../InfoBlock/InfoBlock';
 
 
@@ -15,10 +14,10 @@ const Map = ReactMapboxGl({
 
 const MyMap = () => {
   const {countries, location, getData, setLocation} = useContext(CountriesContext);
+
   useEffect(async () => {
     getData();
   }, []);
-
 
   const markers = countries && countries.map(item => (
     <Feature
@@ -27,7 +26,6 @@ const MyMap = () => {
       onClick={() => {
         setLocation(item);
       }}
-
     />));
 
   return (

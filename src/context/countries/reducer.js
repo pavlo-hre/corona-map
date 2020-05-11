@@ -16,7 +16,8 @@ export const CountriesReducer = (state, {type, payload}) => {
         countries: payload.res,
         total: payload.total,
         loading: false,
-        error: false
+        error: false,
+        updateTime: payload.updateTime
       };
     case FETCH_DATA_ERROR:
       return {
