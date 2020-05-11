@@ -27,10 +27,9 @@ const MyMap = () => {
         setLocation(item);
       }}
     />));
-
   return (
     <Map
-      style="mapbox://styles/mapbox/dark-v10"
+      style="mapbox://styles/mapbox/light-v10"
       containerStyle={{
         height: '100vh',
         width: '100vw'
@@ -43,7 +42,7 @@ const MyMap = () => {
         paint={{
           'circle-color': 'red',
           'circle-opacity': 0.15,
-          'circle-radius': 15,
+          'circle-radius': 18,
         }}
       >
         {markers}

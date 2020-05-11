@@ -16,7 +16,8 @@ export const CountriesState = ({children}) => {
     location: null,
     loading: false,
     error: false,
-    updateTime: null
+    updateTime: null,
+    mode: 'light'
   };
 
   const [state, dispatch] = useReducer(CountriesReducer, initialState);
