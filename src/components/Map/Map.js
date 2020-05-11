@@ -53,11 +53,15 @@ const MyMap = () => {
         <Popup
           coordinates={location.latlng}
           anchor='top'
-          onClick={() => setLocation(null)}
         >
           <div className='popup-header'>
             <img src={location.flag} alt={location.name}/>
             <h3>{location.nameRus}</h3>
+            <span
+              onClick={() => setLocation(null)}
+            >
+              &times;
+            </span>
           </div>
           <InfoBlock {...location}/>
         </Popup>
