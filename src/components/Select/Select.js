@@ -1,15 +1,15 @@
 import React, {useContext} from 'react';
 import Select from 'react-select';
 import {CountriesContext} from '../../context/countries/context';
+import {customStyles} from './customStyle';
 
 
 const NoOptionsMessage = () => {
   return (
-    <div style={{padding: 10, backgroundColor: 'red'}}>Совпадений не
+    <div style={{padding: 10}}>Совпадений не
       найдено...</div>
   );
 };
-
 
 const HeaderSelect = () => {
   const {countries, setLocation, location} = useContext(CountriesContext);
@@ -26,9 +26,10 @@ const HeaderSelect = () => {
     setLocation(location);
   };
 
-
   return (
     <Select
+      styles={customStyles}
+      autoFocus
       components={{NoOptionsMessage}}
       isClearable
       onChange={handleChange}

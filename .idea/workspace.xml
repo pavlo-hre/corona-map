@@ -17,11 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Select/customStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/map.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +97,7 @@
       <workItem from="1589093620089" duration="1758000" />
       <workItem from="1589096213677" duration="809000" />
       <workItem from="1589097043552" duration="33440000" />
+      <workItem from="1589182427994" duration="9480000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1589044246411</created>
