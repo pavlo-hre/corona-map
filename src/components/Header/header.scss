@@ -1,21 +1,47 @@
 header {
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
+  padding-bottom: 3px;
+  min-height: 56px;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 999;
-  background-color: rgba(203, 202, 202, 0.3);
+  background-color: rgba(42, 42, 42, 0.6);
 
-  .select {
+  .header-select {
     flex-grow: 1;
     max-width: 220px;
   }
 
+  .header-info {
+    display: flex;
+  }
+
   .header-title {
     margin: 0;
-    color: #c1c1c1;
+    color: #ffffff;
+    margin-right: 10px;
   }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 7px;
+    align-items: center;
+    .header-select {
+      width: 100%;
+      max-width: 400px;
+    }
+    .header-info {
+      margin-bottom: 5px;
+    }
+
+    .header-title {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
 }

@@ -17,9 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Select/customStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InfoCard/InfoCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InfoCard/infoCard.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/getCountry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getCountry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/countries/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/countries/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -97,7 +102,7 @@
       <workItem from="1589093620089" duration="1758000" />
       <workItem from="1589096213677" duration="809000" />
       <workItem from="1589097043552" duration="33440000" />
-      <workItem from="1589182427994" duration="9480000" />
+      <workItem from="1589182427994" duration="18495000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1589044246411</created>
@@ -127,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589134021701</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="customize select styles">
+      <created>1589193811183</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589193811183</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,17 +174,18 @@
     <MESSAGE value="connect mapbox" />
     <MESSAGE value="add react-select" />
     <MESSAGE value="connect Context" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect Context" />
+    <MESSAGE value="customize select styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="customize select styles" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589043827248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589043827248" />
-    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589134020748">
+    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589193810407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589134020748" />
+    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589193810407" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589129319820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -193,5 +206,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="936" height="270" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589101873175" />
+    <state x="187" y="256" width="585" height="534" key="find.popup" timestamp="1589198161364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="187" y="256" width="585" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589198161364" />
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1589198153892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589198153892" />
   </component>
 </project>

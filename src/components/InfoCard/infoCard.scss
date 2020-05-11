@@ -1,0 +1,39 @@
+.info-card {
+  position: relative;
+  padding-right: 20px;
+  margin-right: 10px;
+  color: #ffffff;
+
+  .info-total {
+    padding: 10px;
+    line-height: 18px;
+    font-size: 18px;
+    background-color: #393939;
+    border-radius: 5px;
+  }
+
+  .info-new {
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: -11px;
+    right: 0;
+    font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    .info-total {
+      font-size: 14px;
+      line-height: 14px;
+      padding: 8px;
+    }
+
+    .info-new {
+      font-size: 11px;
+    }
+    .info-title {
+      font-size: 12px;
+    }
+  }
+}
