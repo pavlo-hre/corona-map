@@ -15,13 +15,13 @@ const InfoBlock = props => {
         type='Всего'
       />
       <InfoCard
+        totalCount={recovered}
+        type='Выздоровело'
+      />
+      <InfoCard
         totalCount={deaths}
         newCount={todayDeaths}
         type='Умерло'
-      />
-      <InfoCard
-        totalCount={recovered}
-        type='Выздоровело'
       />
     </div>
   );

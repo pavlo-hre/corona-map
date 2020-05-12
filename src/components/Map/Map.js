@@ -14,7 +14,7 @@ const Map = ReactMapboxGl({
 
 const MyMap = () => {
   const {
-    countries, location, setLocation, mode, changeLoading
+    countries, location, setLocation, mode, changeLoading, lastLocation
   } = useContext(CountriesContext);
 
   const markers = countries.map(item => (
@@ -31,8 +31,8 @@ const MyMap = () => {
         height: '100vh',
         width: '100vw'
       }}
-      center={location ? location.latlng : [40, 20]}
-      zoom={[location ? 4 : 2]}
+      center={location ? location.latlng : lastLocation.latlng || [40, 20]}
+      zoom={[location ? 4 : 'latlng' in lastLocation ? 3.5 : 2]}
       onStyleLoad={changeLoading}
     >
       <Layer

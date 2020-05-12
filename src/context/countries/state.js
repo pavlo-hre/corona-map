@@ -16,6 +16,7 @@ export const CountriesState = ({children}) => {
     countries: [],
     total: {},
     location: null,
+    lastLocation: {},
     loading: false,
     mapIsReady: false,
     error: false,

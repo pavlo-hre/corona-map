@@ -27,7 +27,8 @@ export const CountriesReducer = (state, {type, payload}) => {
     case SET_LOCATION:
       return {
         ...state,
-        location: payload
+        location: payload,
+        lastLocation: state.location
       };
     case SET_LOADING:
       return {
