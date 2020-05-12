@@ -17,21 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Loader/Loader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Loader/loader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ModeControl/ModeControl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ModeControl/modeControl.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/countries/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/countries/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ModeControl/ModeControl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ModeControl/ModeControl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589287629748</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add loader">
+      <created>1589294956651</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589294956651</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,37 +230,38 @@
     <MESSAGE value="add popup close" />
     <MESSAGE value="change header api" />
     <MESSAGE value="change api data" />
-    <option name="LAST_COMMIT_MESSAGE" value="change api data" />
+    <MESSAGE value="add loader" />
+    <option name="LAST_COMMIT_MESSAGE" value="add loader" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589043827248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589043827248" />
-    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589287629041">
+    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589294955862">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589287629041" />
-    <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589129319820">
+    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589294955862" />
+    <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589296030024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589129319820" />
-    <state width="936" height="271" key="GridCell.Tab.0.bottom" timestamp="1589290721097">
+    <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589296030024" />
+    <state width="936" height="271" key="GridCell.Tab.0.bottom" timestamp="1589296193450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589290721097" />
-    <state width="936" height="271" key="GridCell.Tab.0.center" timestamp="1589290721096">
+    <state width="936" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589296193450" />
+    <state width="936" height="271" key="GridCell.Tab.0.center" timestamp="1589296193450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589290721096" />
-    <state width="936" height="271" key="GridCell.Tab.0.left" timestamp="1589290721096">
+    <state width="936" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589296193450" />
+    <state width="936" height="271" key="GridCell.Tab.0.left" timestamp="1589296193450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589290721096" />
-    <state width="936" height="271" key="GridCell.Tab.0.right" timestamp="1589290721096">
+    <state width="936" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589296193450" />
+    <state width="936" height="271" key="GridCell.Tab.0.right" timestamp="1589296193450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589290721096" />
+    <state width="936" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589296193450" />
     <state x="187" y="256" width="585" height="534" key="find.popup" timestamp="1589198161364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

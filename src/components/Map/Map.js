@@ -1,11 +1,11 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext} from 'react';
 import ReactMapboxGl, {
   Layer,
   Feature, Popup,
 } from 'react-mapbox-gl';
-import './map.scss';
 import {CountriesContext} from '../../context/countries/context';
 import InfoBlock from '../InfoBlock/InfoBlock';
+import './map.scss';
 
 
 const Map = ReactMapboxGl({
@@ -13,12 +13,9 @@ const Map = ReactMapboxGl({
 });
 
 const MyMap = () => {
-  let {countries, location, getData, setLocation, mode, changeLoading} = useContext(CountriesContext);
-
-  useEffect(async () => {
-    getData();
-  }, []);
-
+  const {
+    countries, location, setLocation, mode, changeLoading
+  } = useContext(CountriesContext);
 
   const markers = countries.map(item => (
     <Feature

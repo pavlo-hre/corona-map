@@ -1,22 +1,26 @@
 import React, {useContext, useEffect} from 'react';
+import {CountriesContext} from '../../context/countries/context';
 import Header from '../Header/Header';
 import MyMap from '../Map/Map';
 import ModeControl from '../ModeControl/ModeControl';
 import Loader from '../Loader/Loader';
 import './app.scss';
-import {CountriesContext} from '../../context/countries/context';
 
 
 const App = () => {
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   const data = useContext(CountriesContext);
-  const {loading, mapIsReady} = data;
-  console.log(loading, mapIsReady);
+  const {loading, mapIsReady, mode, setMode, getData} = data;
 
   return (
     <>
       <Header/>
       <MyMap/>
-      <ModeControl/>
+      <ModeControl mode={mode} setMode={setMode}/>
       {!loading && mapIsReady ? null : <Loader/>}
     </>
   );

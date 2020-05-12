@@ -1,6 +1,5 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import Select from 'react-select';
-import {CountriesContext} from '../../context/countries/context';
 import {customStyles} from './customStyle';
 
 
@@ -11,8 +10,8 @@ const NoOptionsMessage = () => {
   );
 };
 
-const HeaderSelect = () => {
-  const {countries, setLocation, location} = useContext(CountriesContext);
+const HeaderSelect = props => {
+  const {countries, setLocation, location} = props;
   const options = countries
     ?
     countries.map(item => ({

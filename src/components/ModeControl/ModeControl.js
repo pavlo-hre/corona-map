@@ -1,9 +1,8 @@
-import React, {useContext} from 'react';
-import {CountriesContext} from '../../context/countries/context';
+import React from 'react';
 import './modeControl.scss';
 
-const ModeControl = () => {
-  const {mode, setMode} = useContext(CountriesContext);
+const ModeControl = props => {
+  const {mode, setMode} = props;
   return (
     <button
       className='mode-btn'

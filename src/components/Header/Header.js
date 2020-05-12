@@ -1,12 +1,14 @@
 import React, {useContext} from 'react';
-import './header.scss';
-import HeaderSelect from '../Select/Select';
 import {CountriesContext} from '../../context/countries/context';
+import HeaderSelect from '../Select/Select';
 import InfoBlock from '../InfoBlock/InfoBlock';
-import ModeControl from '../ModeControl/ModeControl';
+import './header.scss';
+
 
 const Header = () => {
-  const {total, total: {updated}} = useContext(CountriesContext);
+  const {
+    countries, setLocation, location, total, total: {updated}
+  } = useContext(CountriesContext);
 
   const getUpdated = time => new Date(time)
     .toLocaleString('en-GB',
@@ -30,9 +32,13 @@ const Header = () => {
         <InfoBlock {...total}/>
       }
       <div className='header-select'>
-        <HeaderSelect/>
+        <HeaderSelect
+          countries={countries}
+          setLocation={setLocation}
+          location={location}/>
       </div>
     </header>
-  );
+  )
+    ;
 };
 export default Header;
