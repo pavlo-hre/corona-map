@@ -4,23 +4,29 @@ export const getCountry = async () => {
 
   const {data: totalData} = await Axios.get('https://corona.lmao.ninja/v2/all');
 
-
   const {data: {'-M6xgO2PkOLn2zZvB_DX': countries}} = await Axios
     .get('https://countrydata-2c7ac.firebaseio.com/countries.json');
-  const {data: covidData} = await Axios.get('https://api.covid19api.com/summary');
-  const { Countries} = covidData;
-  const res = Countries.map(country => {
+
+  const {data: newApiData} = await Axios.get('https://corona.lmao.ninja/v2/countries');
+
+  const result = newApiData.map(country => {
     countries.forEach(item => {
-      if (country.CountryCode === item.alpha2Code) {
+      if (country.countryInfo && country.countryInfo.iso2 === item.alpha2Code) {
         country = {
           ...item,
-          ...country,
-          latlng: [...item.latlng].reverse()
+          latlng: [...item.latlng].reverse(),
+          cases: country.cases,
+          active: country.active,
+          recovered: country.recovered,
+          deaths: country.deaths,
+          todayCases: country.todayCases,
+          todayDeaths: country.todayDeaths
         };
       }
     });
     return country;
   });
-  return {res,  totalData};
+
+  return {totalData, result};
 };
 

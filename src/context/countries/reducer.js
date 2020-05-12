@@ -13,7 +13,7 @@ export const CountriesReducer = (state, {type, payload}) => {
     case FETCH_DATA_SUCCESS:
       return {
         ...state,
-        countries: payload.res,
+        countries: payload.result.filter(el=>el.name),
         total: payload.totalData,
         loading: false,
         error: false,

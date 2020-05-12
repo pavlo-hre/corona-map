@@ -13,20 +13,25 @@ const Map = ReactMapboxGl({
 });
 
 const MyMap = () => {
-  const {countries, location, getData, setLocation} = useContext(CountriesContext);
+  let {countries, location, getData, setLocation} = useContext(CountriesContext);
+
+  // const dangerZone = countries.filter(el=>el.cases>1000)
+  // const mediumZone = countries.filter(el=>el.cases<=800 && el.cases >700)
 
   useEffect(async () => {
     getData();
   }, []);
+  // console.log(location);
 
-  const markers = countries && countries.map(item => (
+  const markers = countries.map(item => (
     <Feature
-      key={item.alpha2Code}
+      key={item.name}
       coordinates={item.latlng}
       onClick={() => {
         setLocation(item);
       }}
     />));
+  // console.log(markers);
   return (
     <Map
       style="mapbox://styles/mapbox/light-v10"

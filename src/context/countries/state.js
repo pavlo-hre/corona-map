@@ -11,7 +11,7 @@ import {CountriesReducer} from './reducer';
 
 export const CountriesState = ({children}) => {
   const initialState = {
-    countries: null,
+    countries: [],
     total: {},
     location: null,
     loading: false,

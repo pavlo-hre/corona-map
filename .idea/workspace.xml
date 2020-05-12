@@ -19,11 +19,9 @@
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/getCountry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getCountry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoBlock/InfoBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InfoCard/InfoCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCard/InfoCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/context/countries/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/countries/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589220270397</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="change header api">
+      <created>1589284101525</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589284101525</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,37 +211,38 @@
     <MESSAGE value="add popup card styles" />
     <MESSAGE value="add update date" />
     <MESSAGE value="add popup close" />
-    <option name="LAST_COMMIT_MESSAGE" value="add popup close" />
+    <MESSAGE value="change header api" />
+    <option name="LAST_COMMIT_MESSAGE" value="change header api" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589043827248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589043827248" />
-    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589220269707">
+    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589284100740">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589220269707" />
+    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589284100740" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589129319820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589129319820" />
-    <state width="936" height="269" key="GridCell.Tab.0.bottom" timestamp="1589281432938">
+    <state width="936" height="271" key="GridCell.Tab.0.bottom" timestamp="1589285466267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432938" />
-    <state width="936" height="269" key="GridCell.Tab.0.center" timestamp="1589281432937">
+    <state width="936" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589285466267" />
+    <state width="936" height="271" key="GridCell.Tab.0.center" timestamp="1589285466267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432937" />
-    <state width="936" height="269" key="GridCell.Tab.0.left" timestamp="1589281432937">
+    <state width="936" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589285466267" />
+    <state width="936" height="271" key="GridCell.Tab.0.left" timestamp="1589285466267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432937" />
-    <state width="936" height="269" key="GridCell.Tab.0.right" timestamp="1589281432938">
+    <state width="936" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589285466267" />
+    <state width="936" height="271" key="GridCell.Tab.0.right" timestamp="1589285466267">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432938" />
+    <state width="936" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589285466267" />
     <state x="187" y="256" width="585" height="534" key="find.popup" timestamp="1589198161364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
