@@ -19,14 +19,17 @@ const InfoCard = props => {
   return (
     <div className='info-card'>
       <div className='info-total'>
-        {totalCount}
+        {totalCount.toLocaleString('ru-RU')}
       </div>
-      <span
-        className='info-new'
-        style={bgStyles}
-      >
-        {newCount ? `+ ${newCount}` : 0}
+      {
+        newCount >= 0 &&
+        <span
+          className='info-new'
+          style={bgStyles}
+        >
+        {newCount ? `+ ${newCount.toLocaleString('ru-RU')}` : 0}
       </span>
+      }
       <div className='info-title'>
         {type}
       </div>

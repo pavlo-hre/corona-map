@@ -9,7 +9,7 @@ import InfoBlock from '../InfoBlock/InfoBlock';
 
 
 const Map = ReactMapboxGl({
-  accessToken: 'pk.eyJ1IjoiYWxleHJlZDIwMjAiLCJhIjoiY2s5encyNzFvMGJ0ejNncGU1YXpyeWlpdyJ9.GDLbubIZBweoM4j4CsidPw',
+  accessToken: 'pk.eyJ1IjoiYWxleHJlZDIwMjAiLCJhIjoiY2thM3JrMWtxMDE2bDNlbzI4Znc0ZmhpeiJ9.4ZW9KwKskCOE6Srte2z7rQ',
 });
 
 const MyMap = () => {

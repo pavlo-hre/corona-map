@@ -4,25 +4,23 @@ import './InfoBlock.scss';
 
 const InfoBlock = props => {
   const {
-    NewConfirmed, NewDeaths, NewRecovered, TotalConfirmed,
-    TotalDeaths, TotalRecovered
+    cases, deaths, recovered, todayCases, todayDeaths,
   } = props;
 
   return (
     <div className='info-block'>
       <InfoCard
-        totalCount={TotalConfirmed}
-        newCount={NewConfirmed}
+        totalCount={cases}
+        newCount={todayCases}
         type='Всего'
       />
       <InfoCard
-        totalCount={TotalDeaths}
-        newCount={NewDeaths}
+        totalCount={deaths}
+        newCount={todayDeaths}
         type='Умерло'
       />
       <InfoCard
-        totalCount={TotalRecovered}
-        newCount={NewRecovered}
+        totalCount={recovered}
         type='Выздоровело'
       />
     </div>

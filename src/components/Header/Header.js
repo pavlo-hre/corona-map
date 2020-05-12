@@ -5,8 +5,9 @@ import {CountriesContext} from '../../context/countries/context';
 import InfoBlock from '../InfoBlock/InfoBlock';
 
 const Header = () => {
-  const {total, updateTime, total: {TotalConfirmed}} = useContext(CountriesContext);
-  const date = new Date(updateTime)
+  const {total, total: {updated}} = useContext(CountriesContext);
+
+  const getUpdated = time => new Date(time)
     .toLocaleString('en-GB',
       {
         day: 'numeric', month: 'long', hour: '2-digit',
@@ -17,10 +18,13 @@ const Header = () => {
     <header>
       <div className='title-wrap'>
         <h1 className='header-title'>Covid-19 Map </h1>
-        <div className='update-time'>Обновлено: {date}</div>
+        {
+          updated &&
+          <div className='update-time'>Обновлено: {getUpdated(updated)}</div>
+        }
       </div>
       {
-        TotalConfirmed
+        total.cases
         &&
         <InfoBlock {...total}/>
       }

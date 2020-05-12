@@ -18,8 +18,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/getCountry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getCountry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InfoBlock/InfoBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoBlock/InfoBlock.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/InfoCard/InfoCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfoCard/InfoCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map/map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/countries/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/countries/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="82226d2db9ca1c4fe67b2ff451167720e5a96391" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -217,22 +221,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589129319820" />
-    <state width="936" height="267" key="GridCell.Tab.0.bottom" timestamp="1589202980707">
+    <state width="936" height="269" key="GridCell.Tab.0.bottom" timestamp="1589281432938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589202980707" />
-    <state width="936" height="267" key="GridCell.Tab.0.center" timestamp="1589202980707">
+    <state width="936" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432938" />
+    <state width="936" height="269" key="GridCell.Tab.0.center" timestamp="1589281432937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589202980707" />
-    <state width="936" height="267" key="GridCell.Tab.0.left" timestamp="1589202980707">
+    <state width="936" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432937" />
+    <state width="936" height="269" key="GridCell.Tab.0.left" timestamp="1589281432937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589202980707" />
-    <state width="936" height="267" key="GridCell.Tab.0.right" timestamp="1589202980707">
+    <state width="936" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432937" />
+    <state width="936" height="269" key="GridCell.Tab.0.right" timestamp="1589281432938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589202980707" />
+    <state width="936" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589281432938" />
     <state x="187" y="256" width="585" height="534" key="find.popup" timestamp="1589198161364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
