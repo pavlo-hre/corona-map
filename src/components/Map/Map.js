@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useMemo} from 'react';
 import ReactMapboxGl, {
   Layer,
   Feature, Popup,
@@ -17,11 +17,12 @@ const MyMap = () => {
     countries, location, setLocation, mode, changeLoading, lastLocation
   } = useContext(CountriesContext);
 
-  const zone1 = countries.filter(el => el.cases < 1000);
-  const zone2 = countries.filter(el => el.cases >= 1000 && el.cases < 10000);
-  const zone3 = countries.filter(el => el.cases >= 10000 && el.cases < 100000);
-  const zone4 = countries.filter(el => el.cases >= 100000 && el.cases < 1000000);
-  const zone5 = countries.filter(el => el.cases >= 1000000);
+  const zone1 = useMemo(() => countries.filter(el => el.cases < 1000), [countries]);
+  const zone2 = useMemo(() => countries.filter(el => el.cases >= 1000 && el.cases < 10000), [countries]);
+  const zone3 = useMemo(() => countries.filter(el => el.cases >= 10000 && el.cases < 100000), [countries]);
+  const zone4 = useMemo(() => countries.filter(el => el.cases >= 100000 && el.cases < 1000000), [countries]);
+  const zone5 = useMemo(() => countries.filter(el => el.cases >= 1000000), [countries]);
+
 
   const getMarkers = data => data.map(item => (
     <Feature
@@ -44,7 +45,7 @@ const MyMap = () => {
       <Layer
         type="circle"
         paint={{
-          'circle-color': '#fbf700',
+          'circle-color': '#58742e',
           'circle-opacity': 0.5,
           'circle-radius': 7,
         }}
@@ -65,7 +66,7 @@ const MyMap = () => {
         type="circle"
         paint={{
           'circle-color': '#f76300',
-          'circle-opacity': 0.3,
+          'circle-opacity': 0.5,
           'circle-radius': 20,
         }}
       >
@@ -74,7 +75,7 @@ const MyMap = () => {
       <Layer
         type="circle"
         paint={{
-          'circle-color': '#d21f1f',
+          'circle-color': '#ac2d2d',
           'circle-opacity': 0.5,
           'circle-radius': 30,
         }}
@@ -84,8 +85,8 @@ const MyMap = () => {
       <Layer
         type="circle"
         paint={{
-          'circle-color': '#fb0000',
-          'circle-opacity': 0.3,
+          'circle-color': '#fa0000',
+          'circle-opacity': 0.35,
           'circle-radius': 60,
         }}
       >
