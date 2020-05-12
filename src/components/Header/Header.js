@@ -3,6 +3,7 @@ import './header.scss';
 import HeaderSelect from '../Select/Select';
 import {CountriesContext} from '../../context/countries/context';
 import InfoBlock from '../InfoBlock/InfoBlock';
+import ModeControl from '../ModeControl/ModeControl';
 
 const Header = () => {
   const {total, total: {updated}} = useContext(CountriesContext);

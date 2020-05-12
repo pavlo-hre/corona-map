@@ -1,24 +1,25 @@
-import React, {useEffect} from 'react';
-import './app.scss';
+import React, {useContext, useEffect} from 'react';
 import Header from '../Header/Header';
-import {getCountry} from '../../api/getCountry';
 import MyMap from '../Map/Map';
-import {CountriesState} from '../../context/countries/state';
+import ModeControl from '../ModeControl/ModeControl';
+import Loader from '../Loader/Loader';
+import './app.scss';
+import {CountriesContext} from '../../context/countries/context';
 
 
-function App() {
-
+const App = () => {
+  const data = useContext(CountriesContext);
+  const {loading, mapIsReady} = data;
+  console.log(loading, mapIsReady);
 
   return (
     <>
-      <CountriesState>
-        <div style={{position: 'relative'}}>
-        <Header/>
-        <MyMap/>;
-        </div>
-      </CountriesState>
+      <Header/>
+      <MyMap/>
+      <ModeControl/>
+      {!loading && mapIsReady ? null : <Loader/>}
     </>
   );
-}
+};
 
 export default App;

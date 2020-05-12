@@ -1,7 +1,7 @@
 import {
   FETCH_DATA_ERROR,
   FETCH_DATA_START,
-  FETCH_DATA_SUCCESS, SET_LOCATION
+  FETCH_DATA_SUCCESS, SET_LOADING, SET_LOCATION, SET_MODE
 } from '../actionTypes';
 
 export const CountriesReducer = (state, {type, payload}) => {
@@ -13,7 +13,7 @@ export const CountriesReducer = (state, {type, payload}) => {
     case FETCH_DATA_SUCCESS:
       return {
         ...state,
-        countries: payload.result.filter(el=>el.name),
+        countries: payload.result.filter(el => el.name),
         total: payload.totalData,
         loading: false,
         error: false,
@@ -22,12 +22,22 @@ export const CountriesReducer = (state, {type, payload}) => {
       return {
         ...state,
         error: payload.status === 429 ? false : payload,
-        loading: false
+        loading: false,
       };
     case SET_LOCATION:
       return {
         ...state,
         location: payload
+      };
+    case SET_LOADING:
+      return {
+        ...state,
+        mapIsReady: true,
+      };
+    case SET_MODE:
+      return {
+        ...state,
+        mode: state.mode === 'light' ? 'dark' : 'light'
       };
     default:
       return {

@@ -13,34 +13,30 @@ const Map = ReactMapboxGl({
 });
 
 const MyMap = () => {
-  let {countries, location, getData, setLocation} = useContext(CountriesContext);
-
-  // const dangerZone = countries.filter(el=>el.cases>1000)
-  // const mediumZone = countries.filter(el=>el.cases<=800 && el.cases >700)
+  let {countries, location, getData, setLocation, mode, changeLoading} = useContext(CountriesContext);
 
   useEffect(async () => {
     getData();
   }, []);
-  // console.log(location);
+
 
   const markers = countries.map(item => (
     <Feature
       key={item.name}
       coordinates={item.latlng}
-      onClick={() => {
-        setLocation(item);
-      }}
+      onClick={() => setLocation(item)}
     />));
-  // console.log(markers);
+
   return (
     <Map
-      style="mapbox://styles/mapbox/light-v10"
+      style={`mapbox://styles/mapbox/${mode}-v10`}
       containerStyle={{
         height: '100vh',
         width: '100vw'
       }}
       center={location ? location.latlng : [40, 20]}
       zoom={[location ? 4 : 2]}
+      onStyleLoad={changeLoading}
     >
       <Layer
         type="circle"

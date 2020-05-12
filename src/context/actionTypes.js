@@ -2,4 +2,5 @@ export const FETCH_DATA_START = 'FETCH_DATA_START';
 export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
 export const FETCH_DATA_ERROR = 'FETCH_DATA_ERROR';
 export const SET_LOCATION = 'SET_LOCATION';
+export const SET_MODE = 'SET_MODE';
 export const SET_LOADING = 'SET_LOADING';

@@ -3,7 +3,9 @@ import {CountriesContext} from './context';
 import {
   FETCH_DATA_ERROR,
   FETCH_DATA_START,
-  FETCH_DATA_SUCCESS, SET_LOCATION,
+  FETCH_DATA_SUCCESS, SET_LOADING,
+  SET_LOCATION,
+  SET_MODE,
 } from '../actionTypes';
 import {getCountry} from '../../api/getCountry';
 import {CountriesReducer} from './reducer';
@@ -15,16 +17,17 @@ export const CountriesState = ({children}) => {
     total: {},
     location: null,
     loading: false,
+    mapIsReady: false,
     error: false,
     updateTime: null,
-    mode: 'light'
+    mode: 'dark'
   };
 
   const [state, dispatch] = useReducer(CountriesReducer, initialState);
 
   const getData = async () => {
     dispatch({
-      type: FETCH_DATA_START
+      type: FETCH_DATA_START,
     });
     try {
       const data = await getCountry();
@@ -34,9 +37,6 @@ export const CountriesState = ({children}) => {
       });
     } catch (e) {
       console.error(e);
-      if (e.response && e.response.status === 429) {
-        getData();
-      }
       dispatch({
         type: FETCH_DATA_ERROR,
         payload: e.response || e
@@ -51,8 +51,21 @@ export const CountriesState = ({children}) => {
     });
   };
 
+  const setMode = () => {
+    dispatch({
+      type: SET_MODE
+    });
+  };
+
+  const changeLoading = () => {
+    dispatch({
+      type: SET_LOADING
+    });
+  };
+
   return (
-    <CountriesContext.Provider value={{...state, getData, setLocation}}>
+    <CountriesContext.Provider
+      value={{...state, setMode, getData, setLocation, changeLoading}}>
       {children}
     </CountriesContext.Provider>
   );
