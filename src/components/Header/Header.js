@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header>
       <div className='title-wrap'>
-        <h1 className='header-title'>Covid-19 Map </h1>
+        <h1 className='header-title'>COVID-19 Map </h1>
         {
           updated &&
           <div className='update-time'>Обновлено: {getUpdated(updated)}</div>
