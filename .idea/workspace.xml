@@ -16,9 +16,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="change marker styles">
+    <list default="true" id="7b026794-f400-4590-a8d2-f2e11e5d820b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ErrorPage/ErrorPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ErrorPage/errorPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/hoc/ErrorBoundary.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Map/Map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Map/Map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Select/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Select/Select.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,6 +102,8 @@
       <workItem from="1589096213677" duration="809000" />
       <workItem from="1589097043552" duration="33440000" />
       <workItem from="1589182427994" duration="30556000" />
+      <workItem from="1589350482651" duration="4982000" />
+      <workItem from="1589374478437" duration="5424000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1589044246411</created>
@@ -196,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589301749110</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add useMemo">
+      <created>1589306748608</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589306748608</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,37 +255,38 @@
     <MESSAGE value="add loader" />
     <MESSAGE value="fix zoom" />
     <MESSAGE value="change marker styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="change marker styles" />
+    <MESSAGE value="add useMemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add useMemo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589043827248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589043827248" />
-    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589302535726">
+    <state x="37" y="174" key="CommitChangelistDialog2" timestamp="1589306747929">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589302535726" />
+    <state x="37" y="174" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589306747929" />
     <state x="260" y="278" key="FileChooserDialogImpl" timestamp="1589296030024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="260" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589296030024" />
-    <state width="950" height="271" key="GridCell.Tab.0.bottom" timestamp="1589305918505">
+    <state width="936" height="268" key="GridCell.Tab.0.bottom" timestamp="1589380354965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="950" height="271" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589305918505" />
-    <state width="950" height="271" key="GridCell.Tab.0.center" timestamp="1589305918505">
+    <state width="936" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589380354965" />
+    <state width="936" height="268" key="GridCell.Tab.0.center" timestamp="1589380354965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="950" height="271" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589305918505" />
-    <state width="950" height="271" key="GridCell.Tab.0.left" timestamp="1589305918505">
+    <state width="936" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589380354965" />
+    <state width="936" height="268" key="GridCell.Tab.0.left" timestamp="1589380354965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="950" height="271" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589305918505" />
-    <state width="950" height="271" key="GridCell.Tab.0.right" timestamp="1589305918505">
+    <state width="936" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589380354965" />
+    <state width="936" height="268" key="GridCell.Tab.0.right" timestamp="1589380354965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="950" height="271" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589305918505" />
+    <state width="936" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589380354965" />
     <state x="187" y="256" width="585" height="534" key="find.popup" timestamp="1589198161364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -33,7 +33,7 @@ const HeaderSelect = props => {
       isClearable
       onChange={handleChange}
       options={options}
-      placeholder={'Введите страну'}
+      placeholder={'Выберите страну'}
       value={location && {value: location.name, label: location.nameRus}}
     />
   );

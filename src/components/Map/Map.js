@@ -1,7 +1,8 @@
 import React, {useContext, useMemo} from 'react';
 import ReactMapboxGl, {
   Layer,
-  Feature, Popup,
+  Feature,
+  Popup,
 } from 'react-mapbox-gl';
 import {CountriesContext} from '../../context/countries/context';
 import InfoBlock from '../InfoBlock/InfoBlock';
@@ -10,6 +11,7 @@ import './map.scss';
 
 const Map = ReactMapboxGl({
   accessToken: 'pk.eyJ1IjoiYWxleHJlZDIwMjAiLCJhIjoiY2thM3JrMWtxMDE2bDNlbzI4Znc0ZmhpeiJ9.4ZW9KwKskCOE6Srte2z7rQ',
+  minZoom: 1.3,
 });
 
 const MyMap = () => {
@@ -17,19 +19,42 @@ const MyMap = () => {
     countries, location, setLocation, mode, changeLoading, lastLocation
   } = useContext(CountriesContext);
 
-  const zone1 = useMemo(() => countries.filter(el => el.cases < 1000), [countries]);
-  const zone2 = useMemo(() => countries.filter(el => el.cases >= 1000 && el.cases < 10000), [countries]);
-  const zone3 = useMemo(() => countries.filter(el => el.cases >= 10000 && el.cases < 100000), [countries]);
-  const zone4 = useMemo(() => countries.filter(el => el.cases >= 100000 && el.cases < 1000000), [countries]);
-  const zone5 = useMemo(() => countries.filter(el => el.cases >= 1000000), [countries]);
+  const zone1 = useMemo(
+    () => countries.filter(el => el.cases < 1000),
+    [countries]);
+  const zone2 = useMemo(
+    () => countries.filter(el => el.cases >= 1000 && el.cases < 10000),
+    [countries]);
+  const zone3 = useMemo(
+    () => countries.filter(el => el.cases >= 10000 && el.cases < 100000),
+    [countries]);
+  const zone4 = useMemo(
+    () => countries.filter(el => el.cases >= 100000 && el.cases < 1000000),
+    [countries]);
+  const zone5 = useMemo(
+    () => countries.filter(el => el.cases >= 1000000),
+    [countries]);
 
-
-  const getMarkers = data => data.map(item => (
-    <Feature
-      key={item.name}
-      coordinates={item.latlng}
-      onClick={() => setLocation(item)}
-    />));
+  const createMarkers = (data, markerOptions) => {
+    const {color, radius} = markerOptions;
+    return (<Layer
+      type="circle"
+      paint={{
+        'circle-color': color,
+        'circle-opacity': 0.5,
+        'circle-radius': radius,
+      }}
+    >
+      {
+        data.map(item => (
+          <Feature
+            key={item.name}
+            coordinates={item.latlng}
+            onClick={() => setLocation(item)}
+          />))
+      }
+    </Layer>);
+  };
 
   return (
     <Map
@@ -38,60 +63,31 @@ const MyMap = () => {
         height: '100vh',
         width: '100vw'
       }}
-      center={location ? location.latlng : lastLocation.latlng || [40, 20]}
+      center={
+        location
+          ? location.latlng
+          : lastLocation
+          ? lastLocation.latlng
+          : [32, 49]
+      }
       zoom={[location ? 4 : 2]}
       onStyleLoad={changeLoading}
     >
-      <Layer
-        type="circle"
-        paint={{
-          'circle-color': '#58742e',
-          'circle-opacity': 0.5,
-          'circle-radius': 7,
-        }}
-      >
-        {getMarkers(zone1)}
-      </Layer>
-      <Layer
-        type="circle"
-        paint={{
-          'circle-color': '#f79400',
-          'circle-opacity': 0.5,
-          'circle-radius': 12,
-        }}
-      >
-        {getMarkers(zone2)}
-      </Layer>
-      <Layer
-        type="circle"
-        paint={{
-          'circle-color': '#f76300',
-          'circle-opacity': 0.5,
-          'circle-radius': 20,
-        }}
-      >
-        {getMarkers(zone3)}
-      </Layer>
-      <Layer
-        type="circle"
-        paint={{
-          'circle-color': '#ac2d2d',
-          'circle-opacity': 0.5,
-          'circle-radius': 30,
-        }}
-      >
-        {getMarkers(zone4)}
-      </Layer>
-      <Layer
-        type="circle"
-        paint={{
-          'circle-color': '#fa0000',
-          'circle-opacity': 0.35,
-          'circle-radius': 60,
-        }}
-      >
-        {getMarkers(zone5)}
-      </Layer>
+      {
+        createMarkers(zone1, {color: '#58742e', radius: 7})
+      }
+      {
+        createMarkers(zone2, {color: '#f79400', radius: 12})
+      }
+      {
+        createMarkers(zone3, {color: '#f76300', radius: 20})
+      }
+      {
+        createMarkers(zone4, {color: '#ac2d2d', radius: 30})
+      }
+      {
+        createMarkers(zone5, {color: '#fa0000', radius: 50})
+      }
       {
         location &&
         <Popup
